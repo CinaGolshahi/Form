@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-page__error-message" id="error-message">
+        <i class="login-page__error-icon material-icons" id="error-icon"></i>
+        <span class="login-page__error-text" id="error-text"></span>
+      </div>
+      <div class="login-page__container">
+        <div class="login-page__form-section">
+          <h1 class="login-page__title">Login</h1>
+          <form class="login-page__form" action="#" id="loginForm" novalidate>
+            <div class="login-page__input-group">
+              <label class="login-page__label" for="username"
+                >Enter your username:
+              </label>
+              <div class="login-page__input-wrapper">
+                <input
+                  class="login-page__input"
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Username"
+                  minlength="5"
+                  maxlength="20"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="login-page__input-group">
+              <label class="login-page__label" for="password"
+                >Enter your password:
+              </label>
+              <div class="login-page__input-wrapper">
+                <input
+                  class="login-page__input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  minlength="8"
+                  maxlength="26"
+                  required
+                />
+                <i class="login-page__icon material-icons" id="togglePassword"
+                  >visibility</i
+                >
+              </div>
+            </div>
+
+            <div class="login-page__actions">
+              <button
+                class="login-page__button login-page__button--primary"
+                type="submit"
+              >
+                Login
+              </button>
+              <button
+                class="login-page__button login-page__button--secondary"
+                type="button"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="magicpattern"></div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
