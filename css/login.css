@@ -143,6 +143,15 @@
   font-weight: 700;
 }
 
+.login-page__image-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.login-page__image-section img {
+  width: 100%;
+}
+
 @media screen and (max-width: 900px) {
   .login-page__form-section {
     width: 100%;
